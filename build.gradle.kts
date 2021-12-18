@@ -29,3 +29,11 @@ kotlin.sourceSets.all {
         optIn("kotlin.time.ExperimentalTime")
     }
 }
+
+tasks.withType<Test>() {
+    useJUnitPlatform()
+}
+
+application {
+    mainClass.set("ru.senin.kotlin.wiki.MainKt")
+}
